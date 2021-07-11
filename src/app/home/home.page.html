@@ -18,10 +18,11 @@
 
     <ion-card-content>
       <ion-card>
-        <ion-input placeholder="Enter Input"></ion-input></ion-card>
+        <label for="item-input"></label>
+        <ion-input [(ngModel)]="nama" type="text" id="item-input " #newitem placeholder="nama"></ion-input></ion-card>
         <br>
         <ion-grid style="text-align: center;" class="ion-align-items-center">
-          <ion-button color="primary">Next</ion-button>
+          <ion-button (click)="next()" color="primary">Next</ion-button>
         </ion-grid>
         </ion-card-content>
   </ion-card>

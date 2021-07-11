@@ -1,5 +1,7 @@
 {
   "name": "suitmedia1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
