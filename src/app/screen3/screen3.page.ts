@@ -26,17 +26,20 @@ export class Screen3Page implements OnInit {
   }
 
   async event(){
-    const modal = await this.modalCtrl.create({
-      component: Screen2Page,
-      cssClass: 'my-custom-class',
-      componentProps:{
-        'nama':this.nama,
-        'eventoutput': this.eventouput
-      }
-    })
-    // this.router.navigate(['screen2'])
-    // this.print = this.nama;
-  return await modal.present();
+    this.modalCtrl.dismiss({
+      'dismissed':true
+    });
+  //   const modal = await this.modalCtrl.create({
+  //     component: Screen2Page,
+  //     cssClass: 'my-custom-class',
+  //     componentProps:{
+  //       'nama':this.nama,
+  //       'eventoutput': this.eventouput
+  //     }
+  //   })
+  //   // this.router.navigate(['screen2'])
+  //   // this.print = this.nama;
+  // return await modal.present();
   }
 
   // event() {
